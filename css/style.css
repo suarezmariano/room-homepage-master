@@ -73,3 +73,48 @@ body {
 .main_arrows {
     height: 40%;
 }
+
+.main_buy {
+    grid-area: buy;
+}
+
+.main_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_title {
+    color: var(--black);
+}
+
+.main_paragraph {
+    line-height: 1.5;
+    margin: 1em 0 2em;
+    color: var(--dark-gray);
+}
+
+.main_cta {
+    text-decoration: none;
+    color: var(--Very-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    ;
+}
+
+.main_arrow {
+    margin-left: 20px;
+}
+
+.main_bg {
+    grid-area: image1;
+    min-height: 250px;
+    height: 100px;
+    background-image: url("/images/image-about-dark.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
