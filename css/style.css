@@ -118,3 +118,65 @@ body {
     background-position: center;
 
 }
+
+.main_about {
+    grid-area: about;
+}
+
+.main_bg_second {
+    grid-area: image2;
+    background-image: url("../images/image-about-light.jpg");
+}
+
+.main_paragraph_about {
+    margin: 1em 0 0 0;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 85%;
+        padding: 70px 0;
+
+    }
+
+    .main {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+            "main main main main buy buy buy"
+            "main main main main buy buy buy"
+            "main main main main buy buy buy"
+            "image1 image1 about about about image2 image2"
+            "image1 image1 about about about image2 image2"
+    }
+
+    .main_controls {
+        grid-area: buy;
+        justify-self: start;
+    }
+
+    .main_hamburguer {
+        display: none;
+    }
+
+    .main_links {
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+    }
+
+    .main_logo {
+        margin: 0;
+    }
+
+    .main_list {
+        list-style: none;
+    }
+
+    .main_link {
+        color: var(--white);
+        text-decoration: none;
+    }
+}
